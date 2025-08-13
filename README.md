@@ -8,10 +8,3 @@ Ghost Net is a strict ruleset and a protocol for a the client to communicate wit
 Ghost Chaining is a hidden proxy for http requests, it's masked around a http request and is sent from one server to another.
 
 <img src="ghost-chaining.png" alt="Ghost Chaining" height=300 />
-
-### The client has the following responsibilities:
-- Listen for 2 connections, one connection is the mask client, and the other is the next client.
-- Send the target TCP server ip:port to the parent after the connection is established.
-- Establish a connection to a TCP server with the address from a child client.
-- Send data to the parent client.
-- Read from a child and send it to the TCP server that was provided on handshake.
